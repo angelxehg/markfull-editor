@@ -19,3 +19,11 @@ Utilice estos comandos para mantener la calidad del código
 - Unit testing: `npm run test`
 
 - Code linting: `npm run lint`
+
+## Debugging
+
+Para realizar Debugging en Visual Studio Code:
+
+- Iniciar servidor de desarrollo: `npm run start`
+
+- Lanzar debugger desde la pestaña 'Run & Debug'
