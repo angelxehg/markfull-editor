@@ -12,19 +12,19 @@ const App = (): JSX.Element => {
     <div>
       <Container fluid className="pt-3 pb-3">
         <Row>
-          <Col>
+          <Col md="6">
             <div className="mb-3">
               <label htmlFor="inputContent" className="form-label">Contenido:</label>
               <textarea
                 id="inputContent"
-                className="w-100 form-control"
+                className="form-control"
                 rows={20}
                 value={inputContent}
                 onChange={(e) => setInputContent(e.target.value)}
               />
             </div>
           </Col>
-          <Col>
+          <Col md="6">
             <ReactMarkdown>
               {inputContent}
             </ReactMarkdown>
