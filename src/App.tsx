@@ -13,12 +13,16 @@ const App = (): JSX.Element => {
       <Container fluid className="pt-3 pb-3">
         <Row>
           <Col>
-            <textarea
-              className="w-100"
-              rows={20}
-              value={inputContent}
-              onChange={(e) => setInputContent(e.target.value)}
-            />
+            <div className="mb-3">
+              <label htmlFor="inputContent" className="form-label">Contenido:</label>
+              <textarea
+                id="inputContent"
+                className="w-100 form-control"
+                rows={20}
+                value={inputContent}
+                onChange={(e) => setInputContent(e.target.value)}
+              />
+            </div>
           </Col>
           <Col>
             <ReactMarkdown>
