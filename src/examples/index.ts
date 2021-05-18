@@ -3,8 +3,9 @@ export const basicExample = `# Maxime quia
 Maxime quia distinctio neque aut ab nobis. Libero non eius qui dolore voluptatibus molestiae. Beatae doloremque doloribus qui quis ex qui recusandae.
 
 - [Enlace](https://angelxehg.com)
+`
 
-## Vel dolore
+export const imageExample = `# Vel dolore
 
 Vel dolore quasi numquam quia nihil. Esse quidem et recusandae id vel reiciendis. Autem at iusto exercitationem sed non ut. Corrupti et aut qui est ipsum quis architecto. Totam veritatis provident est deserunt aliquam unde velit. Suscipit id ut dolores porro quia.
 
