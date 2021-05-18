@@ -1,17 +1,24 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
+import React from 'react';
+import ReactMarkdown from 'react-markdown'
+
+const example = `
+# Título
+
+Texto
+
+## Subtitulo
+`
 
 const App = (): JSX.Element => {
-  const [count, setCount] = useState(0);
   return (
     <div>
       <header>
         <h1>Hola mundo!</h1>
         <p>Este es un editor de Markdown con vista previa</p>
       </header>
-      <Button onClick={() => setCount(count + 1)}>
-        {count > 0 ? `${count} clicks!` : 'Dame click'}
-      </Button>
+      <ReactMarkdown>
+        {example}
+      </ReactMarkdown>
     </div>
   );
 }
