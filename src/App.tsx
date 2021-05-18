@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import ReactMarkdown from 'react-markdown'
-import Col from 'react-bootstrap/Col'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
+import ReactMarkdown from 'react-markdown';
+import TextareaAutosize from 'react-textarea-autosize';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 import { basicExample } from './examples';
 
@@ -20,7 +21,7 @@ const App = (): JSX.Element => {
           <Col md="6">
             <div className="mb-3">
               <label htmlFor="inputContent" className="form-label">Contenido:</label>
-              <textarea
+              <TextareaAutosize
                 id="inputContent"
                 className="form-control"
                 rows={20}
