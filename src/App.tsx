@@ -4,15 +4,10 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
-const example = `# Título
-
-Texto
-
-## Subtitulo
-`
+import { basicExample } from './examples';
 
 const App = (): JSX.Element => {
-  const [inputContent, setInputContent] = useState(example);
+  const [inputContent, setInputContent] = useState(basicExample);
   return (
     <div>
       <Container fluid className="pt-3 pb-3">
