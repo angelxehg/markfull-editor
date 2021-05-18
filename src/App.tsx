@@ -6,6 +6,11 @@ import Row from 'react-bootstrap/Row'
 
 import { basicExample } from './examples';
 
+const ImageComponent = ({ ...props }) => (
+  // eslint-disable-next-line jsx-a11y/alt-text
+  <img className="img-fluid" {...props} />
+)
+
 const App = (): JSX.Element => {
   const [inputContent, setInputContent] = useState(basicExample);
   return (
@@ -25,7 +30,9 @@ const App = (): JSX.Element => {
             </div>
           </Col>
           <Col md="6">
-            <ReactMarkdown>
+            <ReactMarkdown components={{
+              img: ImageComponent
+            }}>
               {inputContent}
             </ReactMarkdown>
           </Col>
